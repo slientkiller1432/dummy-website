@@ -5,17 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Learn about SafeGuard Air, Air Quality Monitors, Air Purifiers, and Personal Protection Equipment. Improve air quality and protect your health with our solutions.">
   <meta name="keywords" content="SafeGuard Air, Air Quality Monitors, Air Purifiers, Personal Protection Equipment, PPE, air quality, air pollution protection, health solutions, environmental safety">
-  <meta property="og:title" content="SafeGuard Air - Quality Solutions for Clean Air and Health Protection">
-  <meta property="og:description" content="Explore SafeGuard Air solutions, including air quality monitors, air purifiers, and personal protection equipment (PPE) to improve health and air safety.">
-  <meta property="og:image" content="images/safeguard-air.jpg">
-  <meta property="og:url" content="https://yourwebsite.com">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SafeGuard Air - Quality Solutions for Clean Air and Health Protection">
-  <meta name="twitter:description" content="Explore SafeGuard Air solutions, including air quality monitors, air purifiers, and personal protection equipment (PPE) to improve health and air safety.">
-  <meta name="twitter:image" content="images/safeguard-air.jpg">
-
   <title>SafeGuard Air - Clean Air and Health Protection</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #1E3A8A, #ffffff);
+      color: #333;
+    }
+    header nav {
+      background-color: #1E3A8A;
+      color: #fff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+    nav a:hover { color: #F97316; }
+    .section { padding: 50px; text-align: center; }
+    .hero {
+      background: linear-gradient(135deg, #1E3A8A, #F97316);
+      color: #fff;
+      padding: 100px 0;
+      border-radius: 20px;
+    }
+    .hero h1 { font-family: 'Poppins', sans-serif; }
+    .btn-primary {
+      background-color: #F97316;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover { background-color: #10B981; }
+    footer {
+      background-color: #1E3A8A;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -29,9 +75,10 @@
     </nav>
   </header>
 
-  <section id="home" class="section">
+  <section id="home" class="section hero">
     <h1>Welcome to SafeGuard Air</h1>
     <p>Your source for premium air quality solutions, including air purifiers, air quality monitors, and personal protection equipment. Improve your health and environment today!</p>
+    <button class="btn-primary">Explore Solutions</button>
   </section>
 
   <section id="about" class="section">
@@ -48,7 +95,7 @@
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
 
-      <button type="submit">Submit</button>
+      <button type="submit" class="btn-primary">Submit</button>
     </form>
     <div id="formResponse"></div>
   </section>
@@ -56,7 +103,5 @@
   <footer>
     <p>&copy; 2025 SafeGuard Air. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
